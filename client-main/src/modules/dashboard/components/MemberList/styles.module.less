@@ -1,0 +1,59 @@
+.info_circle_icon {
+  position: relative;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 30px;
+    height: 30px;
+    background: #b1aea3;
+    border-radius: 100%;
+    transform: scale(0);
+    opacity: 1;
+    animation: ripple 1.5s linear;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.table {
+  margin-top: 2rem;
+
+  & th {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    padding: 4px 8px !important;
+    background-color: #666 !important;
+    color: #fff !important;
+  }
+
+  & thead .th_sub {
+    background-color: #3f3f3f !important;
+    color: #fff !important;
+  }
+}
+
+.tr_suppended {
+  background-color: #f8ded7;
+}
+
+.tr_close {
+  background-color: #f79646;
+}

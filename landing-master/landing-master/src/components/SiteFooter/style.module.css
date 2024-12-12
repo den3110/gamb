@@ -1,0 +1,13 @@
+.footer {
+  padding: 1.25rem 0;
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(24, 45, 78, 0.9),
+      rgba(24, 45, 78, 0.9)
+    ),
+    url('/FooterBG.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,22 @@
+.text_mobile {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  color: #f77a00;
+  z-index: 0;
+}
+
+.text_mobile::after {
+  content: '';
+  display: inline-flex;
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background-color: #f77a00;
+}

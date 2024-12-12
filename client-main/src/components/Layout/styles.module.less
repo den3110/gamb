@@ -1,0 +1,82 @@
+.tabs {
+  width: 100%;
+  padding: 0.5rem;
+  /*background-color: #001529;*/
+
+  & > label {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.menu {
+  & > li {
+    & li[class~="ant-menu-item"] {
+      height: 32px !important;
+    }
+
+    & span[class="ant-menu-title-content"] {
+      text-transform: uppercase;
+    }
+
+    & ul li span[class="ant-menu-title-content"] {
+      text-transform: capitalize;
+      font-size: 13px;
+    }
+  }
+
+  & li[class~="ant-menu-item-selected"] {
+    background: transparent;
+    color: #4253bb !important;
+  }
+
+  &
+    li[class~="ant-menu-submenu-selected"]
+    > div[class="ant-menu-submenu-title"] {
+    background: #e5e5e5 !important;
+    color: initial !important;
+  }
+
+  & li[class~="ant-menu-item"],
+  & div[class="ant-menu-submenu-title"] {
+    font-weight: 500;
+  }
+}
+
+.sider {
+  > div[class="ant-layout-sider-children"] {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tabs_container {
+  & label[class~="ant-radio-button-wrapper-checked"] {
+    background: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+  }
+}
+
+.carousel {
+  & ul[class~="slick-dots"] {
+    bottom: -30px;
+
+    li {
+      margin-inline: 0px !important;
+    }
+
+    li[class="slick-active"] > button {
+      width: 16px;
+      height: 8px !important;
+      border-radius: 6px;
+      background: #838383;
+    }
+
+    li > button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d9d9d9;
+    }
+  }
+}

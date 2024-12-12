@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "Next.js",
+    "desc": "Using Ant-Design 5 with Next.js 13 and Tailwind CSS"
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "theme": {
+    "light": "Sáng",
+    "dark": "Tối",
+    "system": "Hệ thống"
+  },
+  "header": {
+    "new": "Mới",
+    "username": "Tên truy cập",
+    "password": "Mật khẩu",
+    "login": "Đăng nhập",
+    "join_now": "Tham gia ngay",
+    "Logged in successfully": "Đăng nhập thành công",
+    "Wrong account or password": "Sai tài khoản hoặc mật khẩu",
+    "Logout": "Đăng xuất",
+    "Header Message": "Do gần đây công ty phát hiện thành viên của nhiều đại lý liên quan các loại hình thức cá cược bất thường khác nhau hoặc Hành vi gian lận ( Đánh hàng theo nhóm. Đánh hàng sập giá, cá cược theo nhóm , buôn com ,sử dụng phần mềm cá cược, bất kỳ hành vi nào ảnh hưởng đến hoạt động bình thường của công ty vv...) Công ty thông báo đến quý đại lý , nếu bất kỳ thành viên nào bị công ty phát hiện và phán quyết rằng có cá cược bất thường ảnh hưởng tới hoạt động bình thường của công ty , Công ty sẽ hủy vé cược bất kể cược đó đã có thắng thua , trước giờ quyết toán của công ty mà không cần thông báo trước , đồng thời , công ty sẽ không chịu trách nhiệm tất cả những thiệt hại gây ra ! Vui lòng chuyển thông tin này cho cấp dưới của bạn, Xin cám ơn."
+  }
+}

@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Iconalpha";
+  src: url("../assets/fonts/Iconalpha.eot?kyr3md");
+  src: url("../assets/fonts/Iconalpha.eot?kyr3md#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Iconalpha.ttf?kyr3md") format("truetype"),
+    url("../assets/fonts/Iconalpha.woff?kyr3md") format("woff"),
+    url("../assets/fonts/Iconalpha.svg?kyr3md#Iconalpha") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "Iconalpha" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  height: fit-content;
+  display: inline-block;
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-feedback {
+  position: relative;
+  mask: url(/img/icon-feedback.svg);
+  -webkit-mask-image: url(/img/icon-feedback.svg);
+  mask-image: url(/img/icon-feedback.svg);
+  background-color: #fff;
+  height: 25px;
+  width: 24px;
+  display: inline-block;
+  background-size: 100% 100%;
+  cursor: pointer;
+  fill: #fff;
+
+  &:hover {
+    background-color: #ffe65f;
+    fill: #ffe65f;
+  }
+}
+
+.icon-msgerr:before {
+  content: "";
+}
+
+.icon-edit:before {
+  content: "";
+}
+
+.icon-table-edit:before {
+  content: "";
+}
+
+.icon-bell:before {
+  content: "";
+}
+
+.icon-squares:before {
+  content: "";
+}
+
+.icon-logout:before {
+  content: "";
+}
+
+.icon-hamburger:before {
+  content: "";
+}
+
+.icon-reports:before {
+  content: "";
+}
+
+.icon-memberinfo:before {
+  content: "";
+}
+
+.icon-betlists:before {
+  content: "";
+}
+
+.icon-betsandforecast:before {
+  content: "";
+}
+
+.icon-transfer:before {
+  content: "";
+}
+
+.icon-viewlog:before {
+  content: "";
+}
+
+.icon-riskmanagement:before {
+  content: "";
+}
+
+.icon-sercuritycode:before {
+  content: "";
+}
+
+.icon-backupdomains:before {
+  content: "";
+}
+
+.icon-information-outline:before {
+  content: "";
+}
+
+.icon-backupdomains::after,
+.icon-home:after,
+.icon-bell:after,
+.icon-logout:after,
+.icon-hamburger:after,
+.icon-squares:after {
+  position: relative;
+  content: "";
+  display: block;
+}
+
+.icon-bell:hover::after {
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  width: 32px;
+  height: 32px;
+  background: #b1aea3;
+  border-radius: 100%;
+  opacity: 1;
+  transform: scale(0);
+  animation: ripple 1s ease-out;
+}
+
+.icon-home:hover::after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 32px;
+  height: 32px;
+  background: #b1aea3;
+  border-radius: 100%;
+  opacity: 1;
+  transform: scale(0);
+  animation: ripple 1s ease-out;
+}
+
+.icon-backupdomains:hover::after,
+.icon-logout:hover::after,
+.icon-squares:hover::after,
+.icon-hamburger:hover::after {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 32px;
+  height: 32px;
+  background: #b1aea3;
+  border-radius: 100%;
+  opacity: 1;
+  transform: scale(0);
+  animation: ripple 1s ease-out;
+}

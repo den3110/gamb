@@ -1,0 +1,30 @@
+export default {
+  "@font-size-base": "14px",
+  "@btn-font-weight": "500",
+  "@height-base": "40px",
+  "@height-lg": "48px",
+  "@height-sm": "32px",
+  "@line-height-base": "1",
+  "@border-radius-base": "4px",
+  "@border-radius-sm": "4px",
+  "@padding-md": "16px",
+  "@padding-xs": "8px",
+  "@btn-padding-horizontal-base": "@padding-md",
+  "@btn-padding-horizontal-sm": "@padding-xs",
+
+  "@primary-color": "#1b3f5f",
+  "@info-color": "#1890ff",
+  "@success-color": "#29B899",
+  "@processing-color": "#1890ff",
+  "@error-color": "#f5222d",
+  "@highlight-color": "#f5222d",
+  "@warning-color": "#faad14",
+  "@normal-color": "#d9d9d9",
+  "@white": "#f4fffd",
+  "@black": "#000103",
+  "@disabled-color": "#979aa9",
+  "@primary-border-color": "#e7e8f2",
+
+  //table
+  "@table-selected-row-bg": "#f5f5f5",
+};

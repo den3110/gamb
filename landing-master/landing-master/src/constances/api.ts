@@ -1,0 +1,23 @@
+export enum STATUS_CODE {
+  SUCCESS_MIN = 200,
+  SUCCESS_MAX = 299,
+}
+
+export enum API_NAME {
+  LOGIN = 'LOGIN',
+  USER_INFO = 'USER_INFO',
+  MEMBER = 'MEMBER',
+  CHECK_CODE_USER = 'CHECK_CODE_USER',
+  PLAY_GAME = 'PLAY_GAME',
+  PLAY_SUB_GAME = 'PLAY_SUB_GAME',
+  GAME_CATEGORY = 'GAME_CATEGORY',
+  GAME_SUB_CATEGORY = 'GAME_SUB_CATEGORY',
+}
+
+export const API_ROUTES = {
+  [API_NAME.LOGIN]: `${process.env.NEXT_PUBLIC_API_DOMAIN}/member/login`,
+  [API_NAME.USER_INFO]: `${process.env.NEXT_PUBLIC_API_DOMAIN}/user/me`,
+  [API_NAME.PLAY_GAME]: `${process.env.NEXT_PUBLIC_API_DOMAIN}/play/play`,
+  [API_NAME.PLAY_SUB_GAME]: `${process.env.NEXT_PUBLIC_API_DOMAIN}/play/sub`,
+  [API_NAME.GAME_CATEGORY]: `${process.env.NEXT_PUBLIC_API_DOMAIN}/category`,
+};

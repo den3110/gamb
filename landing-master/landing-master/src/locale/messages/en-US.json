@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "Next.js",
+    "desc": "Using Ant-Design 5 with Next.js 13 and Tailwind CSS"
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "theme": {
+    "light": "light",
+    "dark": "dark",
+    "system": "system"
+  },
+  "header": {
+    "new": "New",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+    "join_now": "Join now",
+    "Logged in successfully": "Logged in successfully",
+    "Wrong account or password": "Wrong account or password",
+    "Logout": "Logout",
+    "Header Message": "Company recently found a lot of agent’s downlines involved in different type of abnormal bet, fraud (Hedging group betting, arbitrage betting, use mechanical betting, or any action will effect company normal operating etc ). Hereby to inform all agents that if company discovers and determines any abnormal bets on its members, Company will delete the tickets regardless of the settled bets before the company settlement time without any notification. Company will not take any responsibility on the losses caused after the ticket is deleted. Please pass this information to downlines, thank you for your cooperation."
+  }
+}
