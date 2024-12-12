@@ -34,6 +34,6 @@ async function bootstrap() {
   // app.useGlobalFilters(new HttpExceptionFilter());
 
   app.useGlobalPipes(new ValidationPipe({ skipMissingProperties: true }));
-  await app.listen(8000);
+  await app.listen(process.env.PORT);
 }
 bootstrap();
