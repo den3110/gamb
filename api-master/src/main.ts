@@ -10,6 +10,7 @@ async function bootstrap() {
     logger: ['error', 'warn', 'debug', 'log'],
   });
   app.enableCors();
+  app.setGlobalPrefix('/backend');
   app.use(
     ['/api'],
     basicAuth({
