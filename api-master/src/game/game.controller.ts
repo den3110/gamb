@@ -34,11 +34,10 @@ export class GameController {
     const response = await axios({
       method: 'POST',
       data: {
-        operator_code: 'N401',
         member_account: 'K8THIETKEGAME',
-        product_code: 'CQ',
+        operator_code: 'N401',
+        product_code: 'SB',
         currency: 'CNY',
-
         sign: this.gameService.createSig('getbalance', requestTime),
         request_time: requestTime,
       },
