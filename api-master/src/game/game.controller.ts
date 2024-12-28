@@ -36,8 +36,8 @@ export class GameController {
       data: {
         member_account: 'K8THIETKEGAME',
         operator_code: 'N401',
-        product_code: 'SB',
-        currency: 'CNY',
+        product_code: '1046',
+        currency: 'IDR',
         sign: this.gameService.createSig('getbalance', requestTime),
         request_time: requestTime,
       },
