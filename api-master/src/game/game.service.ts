@@ -198,7 +198,7 @@ export class GameService {
       }
       const balance = user.amount;
       let balanceFinal = balance;
-      console.log(request.Transaction);
+
       if (request.Transaction) {
         await this.saveGame(request.Transaction);
         this.logger.debug(balanceFinal);

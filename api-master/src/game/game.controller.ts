@@ -29,9 +29,23 @@ export class GameController {
 
   private readonly logger = new Logger(GameController.name);
   @Post('GetBalance')
-  async GetBalance(@Body() getBalanceRequest: GetBalanceRequest) {
-    this.logger.debug(getBalanceRequest);
-    return await this.gameService.GetBalance(getBalanceRequest, 'GetBalance');
+  async GetBalance(@Body() gameList: GameList): Promise<any> {
+    const requestTime = moment().format('YYYYDDMMhhmmss');
+    const response = await axios({
+      method: 'POST',
+      data: {
+        operator_code: 'N401',
+        member_account: 'K8THIETKEGAME',
+        product_code: 'CQ',
+        currency: 'CNY',
+
+        sign: this.gameService.createSig('getbalance', requestTime),
+        request_time: requestTime,
+      },
+      url: 'https://staging.gsimw.com/api/seamless/balance',
+    });
+    console.log(response);
+    return response.data;
   }
 
   @Post('PlaceBet')
@@ -112,9 +126,9 @@ export class GameController {
     const response = await axios({
       method: 'POST',
       data: {
-        OperatorCode: 'E133',
-        MemberName: 'MEMBER002',
-        DisplayName: 'MEMBER002',
+        OperatorCode: 'N401',
+        MemberName: 'K8THIETKEGAME',
+        DisplayName: 'N401-K8THIETKEGAME',
         ProductID: gameList.ProductID,
         GameType: gameList.GameType,
         LanguageCode: 8,

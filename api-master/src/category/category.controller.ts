@@ -15,7 +15,7 @@ import { AuthGuard } from '@nestjs/passport';
 @ApiBearerAuth()
 @ApiTags('Category')
 export class CategoryController {
-  constructor(private readonly categoryService: CategoryService) { }
+  constructor(private readonly categoryService: CategoryService) {}
   private readonly logger = new Logger(CategoryController.name);
 
   @UseGuards(AuthGuard(['member']))

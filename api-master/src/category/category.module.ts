@@ -6,9 +6,7 @@ import { Category } from './entities/category.entity';
 import { GameModule } from 'src/game/game.module';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([Category]),GameModule
-  ],
+  imports: [TypeOrmModule.forFeature([Category]), GameModule],
   controllers: [CategoryController],
   exports: [CategoryService],
   providers: [CategoryService],
